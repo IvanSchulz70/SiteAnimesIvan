@@ -1,0 +1,389 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #494e6b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h5 {
+    color: #494e68;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px rgba(189, 175, 175, 0.5);
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+.section .content,
+.section .image {
+    flex-basis: 45%;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imagem1 img {
+    width: 300px;
+    height: 300px;
+}
+
+.imagem2 img {
+    width: 540px;
+    height: 355px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container p {
+    color: #f5eff2;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.image3 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    z-index: 1;
+}
+
+.text2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 255);
+    font-size: 18px;
+    z-index: 1;
+}
+
+.square {
+    flex-basis: 45%;
+    text-align: center;
+}
+
+.square-content {
+    background-image: url('imagem4.jpg');
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+}
+
+.clickable-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer-left {
+    flex-basis: 45%;
+}
+
+.footer-right {
+    flex-basis: 45%;
+    text-align: center;
+}
+
+.custom-layout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-layout .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.custom-layout .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.custom-layout .section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-layout .subsection {
+    flex-basis: 45%;
+    text-align: center;
+}
+
+.square-divider {
+    flex-basis: 5%;
+    background-color: transparent;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.card-with-border {
+    border-right: 1px solid #dee2e6;
+    margin-right: 150px;
+}
+
+.card:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.card-sinopse {
+    font-size: 15px;
+}
+
+.checkmark {
+    font-size: 24px;
+    color: green;
+    margin-right: 10px;
+}
+
+.custom-checkmark {
+    font-size: 24px;
+    color: green;
+    margin-right: 10px;
+}
+
+.icon-text {
+    text-align: center;
+}
+
+.logo {
+    height: 150px;
+    margin-right: 10px;
+}
+
+.card img {
+    border: none;
+    height: 100%;
+}
+
+.card img.custom-opacity {
+    border: none;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.anime-layout {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.anime-card {
+    width: 18rem;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.anime-card:hover {
+    transform: scale(1.05);
+}
+
+.anime-card img {
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.anime-card:hover img {
+    opacity: 1;
+}
+
+.anime-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.anime-card:hover .anime-details {
+    opacity: 1;
+}
+
+.anime-card:hover .anime-title {
+    display: none;
+}
+
+.anime-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    transition: display 0.5s;
+    color: #000000;
+}
+
+.comments-section {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.custom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.custom-footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.custom-footer-left img {
+    height: 150px;
+    margin-right: 10px;
+}
+
+.custom-footer-left p {
+    margin-bottom: 0;
+}
+
+.custom-footer-right,
+.custom-site-description {
+    flex-basis: 50%;
+}
+
+.custom-link {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.custom-site-description {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #98878f;
+}
+
+.overlay-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card:hover .overlay-text {
+    display: block;
+}
